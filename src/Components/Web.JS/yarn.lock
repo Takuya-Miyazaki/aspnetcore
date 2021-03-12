@@ -662,16 +662,22 @@
     chalk "^4.0.0"
 
 "@microsoft/dotnet-js-interop@link:../../JSInterop/Microsoft.JSInterop.JS/src":
-  version "0.0.0"
-  uid ""
+  version "5.0.0-dev"
 
 "@microsoft/signalr-protocol-msgpack@link:../../SignalR/clients/ts/signalr-protocol-msgpack":
-  version "0.0.0"
-  uid ""
+  version "5.0.0-dev"
+  dependencies:
+    "@microsoft/signalr" "link:../../SignalR/clients/ts/signalr"
+    msgpack5 "^4.5.0"
 
 "@microsoft/signalr@link:../../SignalR/clients/ts/signalr":
-  version "0.0.0"
-  uid ""
+  version "5.0.0-dev"
+  dependencies:
+    abort-controller "^3.0.0"
+    eventsource "^1.0.7"
+    fetch-cookie "^0.7.3"
+    node-fetch "^2.6.0"
+    ws "^6.0.0"
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
@@ -4174,9 +4180,9 @@ ms@^2.1.1:
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
 msgpack5@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/msgpack5/-/msgpack5-4.5.0.tgz#c7e6c0fcd5c1aab76e6f551496a57a7ba2e5428d"
-  integrity sha512-LYuyrhCncpw29VSAsoYyW8x+eubDtkkXCJQzHKren//b70/71GZcFpys+OpR8Qo5Seeeju6ULz5vIhTblFEMPg==
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/msgpack5/-/msgpack5-4.5.1.tgz#2da4dba4ea20c09fd4309c9c04f046e38cb4975e"
+  integrity sha512-zC1vkcliryc4JGlL6OfpHumSYUHWFGimSI+OgfRCjTFLmKA2/foR9rMTOhWiqfOrfxJOctrpWPvrppf8XynJxw==
   dependencies:
     bl "^2.0.1"
     inherits "^2.0.3"
